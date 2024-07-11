@@ -13,7 +13,7 @@ const UserFetch = () => {
     let { data } = await axios.post(endpoint + "/api/auth/signup", user);
     if (data.status === "Success") {
       toast.success(data.message);
-      navigate("/user");
+      navigate("/");
     }
     setloading(false);
   };
@@ -23,7 +23,7 @@ const UserFetch = () => {
     let { data } = await axios.put(`${endpoint + "/api/user"}/${id}`, user);
     if (data.status === "Success") {
       toast.success(data.message);
-      navigate("/user");
+      navigate("/");
     }
     setloading(false);
   };

@@ -69,7 +69,7 @@ const UserUpdate = () => {
           </strong>
 
           <Link
-            to="/User"
+            to="/"
             className=" btn btn-danger mt-2 "
             style={{ position: "absolute", right: "12px" }}
           >

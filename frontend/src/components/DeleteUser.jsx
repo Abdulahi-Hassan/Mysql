@@ -11,7 +11,7 @@ const DeleteUser = () => {
     let { data } = await axios.delete(`${endpoint + "/api/user"}/${id}`);
     if (data.status === "Success") {
       toast.success(data.message);
-      navigate("/user");
+      navigate("/");
     }
   };
   handleDeleteUser();
